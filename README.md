@@ -36,7 +36,7 @@ Freelance Task Marketplace is a full-stack web platform that connects individual
 - Register
 - 404 Not Found
 
-⚠️ Navbar and Footer are available on all pages except the 404 page.
+
 
 ---
 
@@ -95,9 +95,3 @@ Freelance Task Marketplace is a full-stack web platform that connects individual
 
 ## 🌍 Environment Variables
 All sensitive credentials are secured using environment variables.
-
-### Client (.env)
-```env
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
-VITE_FIREBASE_PROJECT_ID=your_project_id
