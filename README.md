@@ -1,4 +1,4 @@
-# Freelance Task Marketplace
+# Freelance Marketplace(TaskMint)
 
 ## 🔗 Live Website
 👉  
