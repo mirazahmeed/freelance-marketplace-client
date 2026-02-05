@@ -1,6 +1,7 @@
 import React from "react";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { LuMessageSquare } from "react-icons/lu";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
 	return (
@@ -30,23 +31,19 @@ const Navbar = () => {
 						<ul
 							tabIndex="-1"
 							className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+							<NavLink>Home</NavLink>
 							<li>
-								<a>Item 1</a>
-							</li>
-							<li>
-								<a>Parent</a>
+								<NavLink>Browse Tasks</NavLink>
 								<ul className="p-2">
 									<li>
-										<a>Submenu 1</a>
+										<NavLink>Looking for Task</NavLink>
 									</li>
 									<li>
-										<a>Submenu 2</a>
+										<NavLink>My Posted Tasks</NavLink>
 									</li>
 								</ul>
 							</li>
-							<li>
-								<a>Item 3</a>
-							</li>
+							<NavLink to="/add-task">Add Task</NavLink>
 						</ul>
 					</div>
 					<a className="btn btn-ghost text-xl">TaskMint</a>
@@ -54,23 +51,23 @@ const Navbar = () => {
 				<div className="navbar-center hidden lg:flex">
 					<ul className="menu menu-horizontal px-1">
 						<li>
-							<a>Item 1</a>
+							<NavLink>Home</NavLink>
 						</li>
 						<li>
 							<details>
-								<summary>Parent</summary>
+								<summary>Browse Tasks</summary>
 								<ul className="p-2 bg-base-100 w-40 z-1">
 									<li>
-										<a>Submenu 1</a>
+										<NavLink>Looking for Task</NavLink>
 									</li>
 									<li>
-										<a>Submenu 2</a>
+										<NavLink>My Posted Tasks</NavLink>
 									</li>
 								</ul>
 							</details>
 						</li>
 						<li>
-							<a>Item 3</a>
+							<NavLink to="/add-task">Add Task</NavLink>
 						</li>
 					</ul>
 				</div>
@@ -175,10 +172,10 @@ const Navbar = () => {
 								</a>
 							</li>
 							<li>
-								<a>Settings</a>
+								<Link to="/register">Register</Link>
 							</li>
 							<li>
-								<a>Logout</a>
+								<Link to="/login">Login</Link>
 							</li>
 						</ul>
 					</div>
